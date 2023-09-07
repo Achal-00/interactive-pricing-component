@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1em;
+    width: 2em;
+    background: url("/icon-slider.svg");
+    background-size: auto;
+    padding: 1.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+    background-color: hsl(174, 86%, 45%);
+    border-radius: 100%;
+  }
+
+  .slider::-moz-range-thumb {
+    height: 1em;
+    width: 1em;
+    background: url("/icon-slider.svg");
+    background-size: auto;
+    padding: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+    background-color: hsl(174, 86%, 45%);
+    border-radius: 100%;
+    border: none;
+  }
+
+  .slider::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px hsla(174, 100%, 51%, 0.219);
+  }
+
+  .slider::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 10px hsla(174, 100%, 51%, 0.219);
+  }
+}
